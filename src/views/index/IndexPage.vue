@@ -24,7 +24,7 @@ export default {
     async fetchData() {
       this.loading = true;
       try {
-        const response = await axios.get('http://127.0.0.1:8080/'); // 确保 URL 正确
+        const response = await axios.get('http://127.0.0.1:8080/index/'); // URL
         console.log(response)
         this.responseData = response.data;
       } catch (error) {
